@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>CS 4460 Final Project</title>
+    <link href="style.css" type="text/css" rel="stylesheet" />
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section id="v2-section">
+        <img src="V2.jpg" alt="AI Empowered GRC Tools" id="v2-image"/>
+    </section>
+
+    <section id="line-chart-container">
+        <div class="line-chart-text">
+            <h2>153 questionnaires were deployed in the past 12 months.</h2>
+            <p>Filter to see where these questionnaires were deployed and in what industry. Location and industry have differing regulations on AI implementations.</p>
+        </div>
+        <div id="filters">
+            <label for="locationFilter">Filter by Location:</label>
+            <select id="locationFilter">
+                <option value="All">All</option>
+            </select>
+            <label for="industryFilter">Filter by Industry:</label>
+            <select id="industryFilter">
+                <option value="All">All</option>
+            </select>
+        </div>
+        <div id="line-chart"></div>
+    </section>
+
+    <section id="bubble-charts-section">
+        <h2>These questionnaires vary in length, question type, and completion.</h2>
+        <p>Some questionnaire recipients chose to use AI, while others did not.</p>
+        <div id="chart-container">
+            <img src="Key.jpg" alt="Key" id="key-image" width="250"/>
+            <div id="bubbleChart"></div>
+        </div>
+        <p></p>
+        <h2>The average completion rate of questionnaires increased signifigantly using AI.</h2>
+        <p>Some questionnaire recipients chose to use AI, while others did not.</p>
+        <div id="bubbleChart2"></div>
+        <div id="bubblechart-container">
+            <img src="Left.jpg" alt="Key" id="key-image" width="250"/>
+            <img src="Right.jpg" alt="Key" id="key-image" width="250"/>
+        </div>
+    </section>
+
+    <section id="scatterplot-section">
+        <h2>64% of users accepted AI suggested responses.</h2>
+        <p>This led to increased rates of questionnaire completion.</p>
+        <section id="scatterplot-container">
+            <div id="chart1"></div>
+            <div id="chart2"></div>
+            <div id="chart3">
+                <div>
+                    <strong>Used AI:</strong>
+                    <svg id="UsedAI" width="20px" height="20px" style="display: inline-block; vertical-align: middle;"></svg>
+                    <br />
+                    <strong>Did Not Use AI:</strong>
+                    <svg id="DidNotUseAI" width="20px" height="20px" style="display: inline-block; vertical-align: middle;"></svg>
+                </div>
+            <p></p>
+        </div>
+    </section>
+        
+    <section id="barcharts-section">
+        <h1>How Does User Interface Design Impact AI Acceptance Rates?</h1>
+        <div id="histogram-container">
+            <img src="graph.jpeg" alt="histogram" />
+        </div>
+        
+    </section>
+
+</body>
+
+
+</html>
